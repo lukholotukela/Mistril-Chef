@@ -51,7 +51,7 @@ main {
   font-family: Inter, sans-serif;
   border-radius: 6px;
   border: none;
-  background-color: #141413;
+  background-color: #1a1b33;
   color: #fafaf8;
   width: 150px;
   font-size: 0.875rem;
@@ -110,9 +110,63 @@ ul.ingredients-list > li {
   line-height: 28px;
   font-size: 1.125rem;
   font-weight: 400;
+  margin-bottom: 48px;
 }
 
 .suggested-recipe-container ul li,
 .suggested-recipe-container ol li {
   margin-bottom: 8px;
+}
+
+.loading-gif {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 30px;
+  background-color: #0c0d1d;
+  color: #fafaf8;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer > p {
+  font-size: 0.875rem;
+  line-height: 20px;
+}
+
+footer > p > a {
+  color: #fafaf8;
+  margin: 0;
+}
+
+footer > p > a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  header > img {
+    width: 90px;
+  }
+}
+
+@media (max-width: 400px) {
+  header > img {
+    width: 70px;
+  }
+}
+
+@media (max-width: 300px) {
+  header > img {
+    width: 50px;
+  }
 }

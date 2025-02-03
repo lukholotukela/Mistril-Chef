@@ -1,10 +1,10 @@
-import ReactMarkdown from "react-markdown"
+import ReactMarkdown from "react-markdown";
 
-export default function RecipeMd({recipe}) {
-    return (
-        <>
-        <h1>{recipe? "Chef Mistril Responds:": null}</h1>
-        <ReactMarkdown>{recipe}</ReactMarkdown>
-        </>
-    )
+export default function RecipeMd({ recipe }) {
+  return (
+    <div className="suggested-recipe-container">
+      <h1>{recipe ? "Chef Mistril Responds:" : null}</h1>
+      <ReactMarkdown>{recipe}</ReactMarkdown>
+    </div>
+  );
 }
