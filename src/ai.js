@@ -25,4 +25,4 @@ export async function getRecipeFromMistral(ingredientsArr) {
     console.error(err.message);
   }
 }
-(process.env.REACT_APP_HF_API_TOKEN? "available": "not-available")
+console.log(process.env.REACT_APP_HF_API_TOKEN? "available": "not-available")
