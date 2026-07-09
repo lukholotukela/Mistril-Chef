@@ -11,7 +11,7 @@ export default function Main() {
 
   async function toggleRecipe() {
     setLoading(true);
-    const recipeMarkdown = await getRecipeFromMistral(ingredients);
+    const recipeMarkdown = await getRecipeFromClaude(ingredients);
     setRecipe(recipeMarkdown);
     setLoading(false);
   }
