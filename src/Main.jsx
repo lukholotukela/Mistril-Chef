@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import IngredientsList from "./components/IngredientsList";
-import { getRecipeFromMistral } from "./ai";
+import { getRecipeFromClaude } from "./ai";
 import RecipeMd from "./components/RecipeMd";
 import loadingGif from "./images/loading.gif";
 
